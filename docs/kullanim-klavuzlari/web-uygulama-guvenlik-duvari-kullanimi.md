@@ -6,9 +6,7 @@ Ahtapot Web Uygulama Güvenlik Duvarının kurulum ve Konfigürasyonu “**/etc/
 
 
 ### Ahtapot Web Uygulama Güvenlik Duvarı Nasıl Çalışır?
-Klasik anlamda, bir web sunucusunun önüne geçerek, tüm istekleri kendi üzerinden geçirmek kaydıyla, bu istekleri kural tabanlı kontrol ederek, uygun olan isteklere izin verip, kurallara takılanları bloke etme şeklinde çalışır.
-
-Ahtapot Web Uygulama Güvenlik Duvarını sisteme eklediğimizde, Web Sunucuları önünde bir güvenlik katmanı oluşturarak, kurallara takılan anormal SQL isteklerini tespit ederiz. Anormal istekleri tespit etmek için Ahtapot Veritabanı Güvenlik Duvarı, öncelikle öğrenme modunda (learning) çalışır ve dahili veritabanına, bir düzen oluşturur(düzen bilgisi, sorgular, kullanıcılar, kaynak adresler, zaman gibi bilgilerden oluşmaktadır). 
+Klasik anlamda, Ahtapot Web Uygulama Güvenlik Duvarını sisteme eklediğimizde, Web Sunucuları önünde bir güvenlik katmanı oluşturarak, tüm istekleri kendi üzerinden geçirmek kaydıyla, bu istekleri kural tabanlı kontrol ederek, uygun olan isteklere izin verip, kurallara takılanları bloke ederek Web sunucularının güvenliğini sağlar. 
 
 ![AVGD](../img/ahtapot.waf.1.png)
 
