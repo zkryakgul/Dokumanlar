@@ -136,7 +136,7 @@ serverN:
         fqdn: "squid.gdys.local"
         hostname: "squid"
 ```
-* Squid proxy'nin konfigürasyon dosyası için Gitlab arayüzünden mys reposuna erişilerek “**roles/squid/templates/squid**" dizini altına "**squid_fqdn_bilgisi.conf.j2**" formatında bir dosya oluşturulmalıdır. Oluşturulan bu dosyanın içeriği aşğıdaki gibi olmalıdır. 
+* Squid proxy'nin konfigürasyon dosyası için Gitlab arayüzünden mys reposuna erişilerek “**roles/squid/templates/squid**" dizini altına "**squid_fqdn_bilgisi.conf.j2**" formatında bir dosya oluşturulmalıdır (örn: **proxy.gdys.local.conf.j2**). Oluşturulan bu dosyanın içeriği aşğıdaki gibi olmalıdır. 
 
 
 ```
@@ -190,7 +190,7 @@ refresh_pattern .               0       20%     4320
 cache_dir ufs /var/spool/squid 100 16 256
 ```
 
-* Squid proxy üzerinde çalışacak dansguardian’ının konfigürasyon dosyası için Gitlab arayüzünden mys reposuna erişilerek “**roles/squid/templates/dansguardian/configuration**" dizini altında “**squid.fqdn_bilgisi.conf.j2**" formatında squid makinesinin FQDN bilgisinin yer aldığı bir dosya oluşturulmalıdır. Bu dosyanın içeriği aşğıdaki gibi olmalıdır.
+* Squid proxy üzerinde çalışacak dansguardian’ının konfigürasyon dosyası için Gitlab arayüzünden mys reposuna erişilerek “**roles/squid/templates/dansguardian/configuration**" dizini altında “**squid_fqdn_bilgisi.conf.j2**" formatında squid makinesinin FQDN bilgisinin yer aldığı bir dosya oluşturulmalıdır (örn: **proxy.gdys.local.conf.j2**). Bu dosyanın içeriği aşğıdaki gibi olmalıdır.
 
 ```
 ## Bu dosya ansible tarafindan yonetilmektedir!  
